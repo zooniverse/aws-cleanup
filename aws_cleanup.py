@@ -169,7 +169,7 @@ for page in list_objects_paginator.paginate(
                 date = datetime.datetime.strptime(date, '%d%m%y')
             except ValueError:
                 print("Warning: Unknown date format for {}".format(
-                    database_backup.name,
+                    database_backup['Key'],
                 ))
                 continue
 
